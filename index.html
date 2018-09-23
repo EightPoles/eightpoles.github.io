@@ -24,7 +24,7 @@
 				overflow-x: hidden;
 			}
 
-			header {
+			header, footer {
 				text-align: center;
 				background-image: url("images/header.png");
 				background-size: cover;
@@ -51,8 +51,12 @@
 				color: black;
 			}
 
-			header > h2 > a {
+			header a, footer a {
 				color: white;
+			}
+
+			footer a:hover {
+				opacity: 0.5;
 			}
 
 			article {
@@ -262,5 +266,9 @@
 			</tr>
 		</table>
 	</article>
+	<footer>
+		<p>Page created and maintained by Tantusar.</p>
+		<span style="font-size: 2.5em"><a href="https://twitter.com/Tantusar"><i class="fab fa-twitter"></i></a>&emsp;<a href="https://youtube.com/Tantusar"><i class="fab fa-youtube"></i></a>&emsp;<a href="https://twitch.tv/Tantusar"><i class="fab fa-twitch"></i></a>&emsp;<a href="https://soundcloud.com/Tantusar"><i class="fab fa-soundcloud"></i></a></span>
+	</footer>
 </body>
 </html>
