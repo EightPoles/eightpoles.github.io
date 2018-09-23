@@ -2,84 +2,165 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<title>The Eight Poles Marathon</title>
 	<style>
-		@import url('https://rsms.me/inter/inter-ui.css');
+			@import url('https://rsms.me/inter/inter-ui.css');
 
-		@font-face {
-			font-family: 'Minecraft-Regular';
-			src:url('Minecraft-Regular.ttf.woff') format('woff'),
-			url('Minecraft-Regular.ttf.svg#Minecraft-Regular') format('svg'),
-			url('Minecraft-Regular.ttf.eot'),
-			url('Minecraft-Regular.ttf.eot?#iefix') format('embedded-opentype');
-			font-weight: normal;
-			font-style: normal;
-		}
-
-		body {
-			font-family: 'Inter UI', sans-serif;
-			margin: 0;
-			background-color: #ccc;
-			overflow-x: hidden;
-		}
-
-		header {
-			text-align: center;
-			background-image: url("images/header.png");
-			background-size: cover;
-			background-position: center;
-			color: white;
-			padding: 50px 0;
-			width: 100%;
-		}
-
-		header > h2, header > h1 {
-			margin: 0;
-		}
-
-		header > h1 {
-			font-size: 2.5em;
-		}
-
-		header > h2 {
-			font-weight: 500;
-			font-size: 1.5em;
-		}
-
-		a {
-			color: black;
-		}
-
-		header > h2 > a {
-			color: white;
-		}
-
-		article {
-			max-width: 950px;
-			background-color: #fff;
-			border-radius: 25px;
-			margin: 25px auto;
-			padding: 0.25em 25px;
-		}
-
-		code {
-			font-family: 'Minecraft-Regular', monospace;
-			font-size: inherit;
-			border: 2px darkgrey solid;
-			padding: 3px;
-			color: white;
-			background-color: dimgrey;
-		}
-
-		@media (max-width: 1100px) {
-			article {
-				max-width: none;
-				min-width: none;
-				padding: 0.25em 25px;
-				width: calc(100% - 50px);
-				border-radius: 0;
+			@font-face {
+				font-family: 'Minecraft-Regular';
+				src:url('Minecraft-Regular.ttf.woff') format('woff'),
+				url('Minecraft-Regular.ttf.svg#Minecraft-Regular') format('svg'),
+				url('Minecraft-Regular.ttf.eot'),
+				url('Minecraft-Regular.ttf.eot?#iefix') format('embedded-opentype');
+				font-weight: normal;
+				font-style: normal;
 			}
-		}
+
+			body {
+				font-family: 'Inter UI', sans-serif;
+				margin: 0;
+				background-color: #ccc;
+				overflow-x: hidden;
+			}
+
+			header {
+				text-align: center;
+				background-image: url("images/header.png");
+				background-size: cover;
+				background-position: center;
+				color: white;
+				padding: 50px 0;
+				width: 100%;
+			}
+
+			header > h2, header > h1 {
+				margin: 0;
+			}
+
+			header > h1 {
+				font-size: 2.5em;
+			}
+
+			header > h2 {
+				font-weight: 500;
+				font-size: 1.5em;
+			}
+
+			a {
+				color: black;
+			}
+
+			header > h2 > a {
+				color: white;
+			}
+
+			article {
+				max-width: 950px;
+				background-color: #fff;
+				border-radius: 25px;
+				margin: 25px auto;
+				padding: 0.25em 25px;
+			}
+
+			code {
+				font-family: 'Minecraft-Regular', monospace;
+				font-size: inherit;
+				border: 2px darkgrey solid;
+				padding: 3px;
+				color: white;
+				background-color: dimgrey;
+			}
+
+			@media (max-width: 1100px) {
+				article {
+					max-width: none;
+					min-width: none;
+					padding: 0.25em 25px;
+					width: calc(100% - 50px);
+					border-radius: 0;
+				}
+			}
+
+			.tg  {
+				border-collapse: collapse;
+				border-spacing: 0;
+				text-align: center;
+				width: 100%;
+				margin-bottom: 20px;
+			}
+
+			.tg td{
+				padding:5px 20px;
+				border-style:none;
+				overflow:hidden;
+				word-break:normal;
+			}
+
+			.tg th{
+				padding:5px 5px;
+				border-style:none;
+				overflow:hidden;
+				word-break:normal;
+			}
+
+			.tg tr:nth-child(even) {
+				background-color: #eee;
+			}
+
+			.tg tr:hover {
+				filter: brightness(90%);
+			}
+
+			.place {
+				width: 10px;
+				max-width: 10px;
+			}
+
+			.god {
+				width: 80px;
+				max-width: 80px;
+			}
+
+			.elytra {
+				width: 60px;
+				max-width: 60px;
+			}
+
+			.video {
+				width: 60px;
+				max-width: 60px;
+			}
+
+			.donor {
+				color: limegreen;
+			}
+
+			.alumni {
+				color: deepskyblue;
+			}
+
+			.janitor {
+				color: darkorange;
+			}
+
+			.staff {
+				color: red;
+			}
+
+			.operator {
+				color: magenta;
+			}
+
+			.player, .donor, .alumni, .janitor, .staff, .operator {
+				font-weight: bold;
+			}
+
+			.time {
+				-moz-font-feature-settings: "tnum";
+				-webkit-font-feature-settings: "tnum";
+				font-feature-settings: "tnum";
+			}
 	</style>
 </head>
 <body>
@@ -102,7 +183,21 @@
 	</article>
 	<article>
 		<h1>Is there a specific set of rules?</h1>
-		<p>to be filled in</p>
+		<ol>
+			<li>A run of the Eight Poles Marathon starts and ends at the start/finish line next to the Western Pole of the MCAU Minecraft server, accessible using <code>/dwarp Tantusar</code>.</li>
+			<li>Timing for a run begins when the participant attempting it leaves the marked start/finish line and ends when they are standing on it again.</li>
+			<li>A run may be made in a clockwise or anti-clockwise direction.</li>
+			<li>A run may be made with or without god mode enabled.</li>
+			<li>A run is valid if the participant attempting it comes within three blocks of each of the eight poles of the server. There is a pole at each corner of the map and 4000 blocks from the centre in the cardinal directions.</li>
+			<li>A valid run is immediately invalidated if the participant attempting it performs any form of teleportation, including but not limited to:
+				<ul>
+					<li>Warping or Dwarping</li>
+					<li>TP requests</li>
+					<li>Use of ender pearls</li>
+					<li>Use of a compass to teleport</li>
+				</ul>
+			</li>
+		</ol>
 	</article>
 	<article>
 		<h1>How do I get there?</h1>
@@ -116,12 +211,34 @@
 		<h1>How do I submit a time?</h1>
 		<p>In order to submit a time, you will need to send it via Direct Message to @Tantusar#7835 on Discord. If you are on the <a href="https://discordapp.com/invite/tAQmVb">official MCAU Discord server</a> you should be able to find him. Your submission must include:</p>
 		<ul>
+			<li>Your Minecraft username.</li>
 			<li>Your time.</li>
 			<li>The direction in which you completed the Marathon.</li>
 			<li>Whether god mode was used during the run.</li>
 			<li>Whether an elytra was used during the run.</li>
 		</ul>
 		<p>In order to be considered for world record status, your submission must also include video evidence of the attempt.</p>
+	</article>
+	<article>
+		<h1>Records</h1>
+		<table class="tg" id="records">
+			<tr>
+				<th class="place"></th>
+				<th>Player</th>
+				<th>Time</th>
+				<th class="god">God Mode</th>
+				<th class="elytra">Elytra</th>
+				<th class="video">Video</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td class="player">Placeholder</td>
+				<td class="time">77:77:77</td>
+				<td>Yes</td>
+				<td>No</td>
+				<td><a href="#" target="_blank"><i class="fas fa-video"></i></a></td>
+			</tr>
+		</table>
 	</article>
 </body>
 </html>
