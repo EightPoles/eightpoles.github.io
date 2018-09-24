@@ -5,176 +5,209 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<title>The Eight Poles Marathon</title>
 	<style>
-			@import url('https://rsms.me/inter/inter-ui.css');
+	@import url('https://rsms.me/inter/inter-ui.css');
 
-			@font-face {
-				font-family: 'Minecraft-Regular';
-				src:url('Minecraft-Regular.ttf.woff') format('woff'),
-				url('Minecraft-Regular.ttf.svg#Minecraft-Regular') format('svg'),
-				url('Minecraft-Regular.ttf.eot'),
-				url('Minecraft-Regular.ttf.eot?#iefix') format('embedded-opentype');
-				font-weight: normal;
-				font-style: normal;
-			}
+	@font-face {
+		font-family: 'Minecraft-Regular';
+		src:url('Minecraft-Regular.ttf.woff') format('woff'),
+		url('Minecraft-Regular.ttf.svg#Minecraft-Regular') format('svg'),
+		url('Minecraft-Regular.ttf.eot'),
+		url('Minecraft-Regular.ttf.eot?#iefix') format('embedded-opentype');
+		font-weight: normal;
+		font-style: normal;
+	}
 
-			body {
-				font-family: 'Inter UI', sans-serif;
-				margin: 0;
-				background-color: #ccc;
-				overflow-x: hidden;
-			}
+	body {
+		font-family: 'Inter UI', sans-serif;
+		margin: 0;
+		background-color: #ccc;
+		overflow-x: hidden;
+	}
 
-			header, footer {
-				text-align: center;
-				background-image: url("images/header.png");
-				background-size: cover;
-				background-position: center;
-				color: white;
-				padding: 50px 0;
-				width: 100%;
-			}
+	header, footer {
+		text-align: center;
+		background-image: url("images/header.png");
+		background-size: cover;
+		background-position: center;
+		color: white;
+		padding: 50px 0;
+		width: 100%;
+	}
 
-			header > h2, header > h1 {
-				margin: 0;
-			}
+	header > h2, header > h1 {
+		margin: 0;
+	}
 
-			header > h1 {
-				font-size: 2.5em;
-			}
+	header > h1 {
+		font-size: 2.5em;
+	}
 
-			header > h2 {
-				font-weight: 500;
-				font-size: 1.5em;
-			}
+	header > h2 {
+		font-weight: 500;
+		font-size: 1.5em;
+	}
 
-			a {
-				color: black;
-			}
+	a {
+		color: black;
+	}
 
-			header a, footer a {
-				color: white;
-			}
+	header a, footer a {
+		color: white;
+	}
 
-			footer a:hover {
-				opacity: 0.5;
-			}
+	footer a:hover {
+		opacity: 0.5;
+	}
 
-			article {
-				max-width: 950px;
-				background-color: #fff;
-				border-radius: 25px;
-				margin: 25px auto;
-				padding: 0.25em 25px;
-			}
+	article {
+		max-width: 950px;
+		background-color: #fff;
+		border-radius: 25px;
+		margin: 25px auto;
+		padding: 0.25em 25px;
+	}
 
-			code {
-				font-family: 'Minecraft-Regular', monospace;
-				font-size: inherit;
-				border: 2px darkgrey solid;
-				padding: 3px;
-				color: white;
-				background-color: dimgrey;
-			}
+	code {
+		font-family: 'Minecraft-Regular', monospace;
+		font-size: inherit;
+		border: 2px darkgrey solid;
+		padding: 3px;
+		color: white;
+		background-color: dimgrey;
+	}
 
-			@media (max-width: 1100px) {
-				article {
-					max-width: none;
-					min-width: none;
-					padding: 0.25em 25px;
-					width: calc(100% - 50px);
-					border-radius: 0;
-				}
-			}
+	@media (max-width: 1100px) {
+		article {
+			max-width: none;
+			min-width: none;
+			padding: 0.25em 25px;
+			width: calc(100% - 50px);
+			border-radius: 0;
+		}
+	}
 
-			.tablewrap {
-				width: 100%;
-				overflow-x: auto;
-				padding: 0;
-				margin: 0;
-			}
+	.tablewrap {
+		width: 100%;
+		overflow-x: auto;
+		padding: 0;
+		margin: 0;
+	}
 
-			.tg  {
-				border-collapse: collapse;
-				border-spacing: 0;
-				text-align: center;
-				width: 100%;
-				margin-bottom: 20px;
-			}
+	.tg  {
+		border-collapse: collapse;
+		border-spacing: 0;
+		text-align: center;
+		width: 100%;
+		margin-bottom: 20px;
+	}
 
-			.tg td{
-				padding:5px 20px;
-				border-style:none;
-				overflow:hidden;
-				word-break:normal;
-				white-space: nowrap;
-			}
+	.tg td{
+		padding:5px 20px;
+		border-style:none;
+		overflow:hidden;
+		word-break:normal;
+		white-space: nowrap;
+	}
 
-			.tg th{
-				padding:5px 5px;
-				border-style:none;
-				overflow:hidden;
-				word-break:normal;
-				white-space: nowrap;
-			}
+	.tg th{
+		padding:5px 5px;
+		border-style:none;
+		overflow:hidden;
+		word-break:normal;
+		white-space: nowrap;
+	}
 
-			.tg tr:nth-child(even) {
-				background-color: #eee;
-			}
+	.tg tr:nth-child(even) {
+		background-color: #eee;
+	}
 
-			.tg tr:hover {
-				filter: brightness(90%);
-			}
+	.tg tr:hover {
+		filter: brightness(90%);
+	}
 
-			.place {
-				width: 10px;
-				max-width: 10px;
-			}
+	.place {
+		width: 10px;
+		max-width: 10px;
+	}
 
-			.god {
-				width: 80px;
-				max-width: 80px;
-			}
+	.god {
+		width: 80px;
+		max-width: 80px;
+	}
 
-			.elytra {
-				width: 60px;
-				max-width: 60px;
-			}
+	.elytra {
+		width: 60px;
+		max-width: 60px;
+	}
 
-			.video {
-				width: 60px;
-				max-width: 60px;
-			}
+	.video {
+		width: 60px;
+		max-width: 60px;
+	}
 
-			.donor {
-				color: limegreen;
-			}
+	.donor {
+		color: limegreen;
+	}
 
-			.alumni {
-				color: deepskyblue;
-			}
+	.alumni {
+		color: deepskyblue;
+	}
 
-			.janitor {
-				color: darkorange;
-			}
+	.janitor {
+		color: darkorange;
+	}
 
-			.staff {
-				color: red;
-			}
+	.staff {
+		color: red;
+	}
 
-			.operator {
-				color: magenta;
-			}
+	.operator {
+		color: magenta;
+	}
 
-			.player, .donor, .alumni, .janitor, .staff, .operator {
-				font-weight: bold;
-			}
+	.player, .donor, .alumni, .janitor, .staff, .operator {
+		font-weight: bold;
+	}
 
-			.time {
-				-moz-font-feature-settings: "tnum";
-				-webkit-font-feature-settings: "tnum";
-				font-feature-settings: "tnum";
-			}
+	.time {
+		-moz-font-feature-settings: "tnum";
+		-webkit-font-feature-settings: "tnum";
+		font-feature-settings: "tnum";
+	}
+
+	.toggle {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	#poles {
+		display: none;
+		grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+		grid-gap: 15px;
+		margin-bottom: 20px;
+	}
+
+	#poles img {
+		display: block;
+		width: 100%;
+		margin: 0;
+	}
+
+	#poles a {
+		padding: 0;
+		margin: 0;
+	}
 	</style>
+	<script>
+	function showHide(id, mode) {
+		var x = document.getElementById(id);
+		if (x.style.display === "none") {
+			x.style.display = mode;
+		} else {
+			x.style.display = "none";
+		}
+	}
+	</script>
 </head>
 <body>
 	<header>
@@ -219,7 +252,17 @@
 	</article>
 	<article>
 		<h1>Is there a map or route markers?</h1>
-		<p>Not yet. The only marked points at time of writing are the titular eight poles and the start/finish line.</p>
+		<p>Not yet. The only marked points at time of writing are the titular eight poles and the start/finish line. You can, however, see what each pole looks like by clicking <span class="toggle" onclick="showHide('poles', 'grid')">here</span>.</p>
+		<div id="poles" style="display: none;">
+			<a href="images/W.png" target="_blank" title="Western Pole"><img src="images/W.png"></img></a>
+			<a href="images/NW.png" target="_blank" title="North-Western Pole"><img src="images/NW.png"></img></a>
+			<a href="images/N.png" target="_blank" title="Northern Pole"><img src="images/N.png"></img></a>
+			<a href="images/NE.png" target="_blank" title="North-Eastern Pole"><img src="images/NE.png"></img></a>
+			<a href="images/E.png" target="_blank" title="Eastern Pole"><img src="images/E.png"></img></a>
+			<a href="images/SE.png" target="_blank" title="South-Eastern Pole"><img src="images/SE.png"></img></a>
+			<a href="images/S.png" target="_blank" title="Southern Pole"><img src="images/S.png"></img></a>
+			<a href="images/SW.png" target="_blank" title="South-Western Pole"><img src="images/SW.png"></img></a>
+		</div>
 	</article>
 	<article>
 		<h1>How do I submit a time?</h1>
